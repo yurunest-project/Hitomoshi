@@ -355,7 +355,7 @@ export default function HomePage() {
             className="mt-4 text-base text-navy"
             aria-label="法務情報へのリンク"
           >
-            <span aria-hidden="true">📄 </span>
+            <span aria-hidden="true"> </span>
             <a
               href="#privacy"
               className="font-medium text-lantern underline-offset-4 hover:underline"
