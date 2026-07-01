@@ -37,9 +37,8 @@ const thirdPartyExceptions = [
 const tokushohoRows = [
   { label: "事業者名", value: "ひともし（代表：佐野 未夕）" },
   {
-    label: "",
-    value: "（後日追記予定）",
-    note: "審査通過のために必要です。自宅またはバーチャルオフィスの住所を追記してください。",
+    label: "住所",
+    value: "〒1700013 東京都豊島区東池袋2丁目62番8号BIGオフィスプラザ池袋1206",
   },
   {
     label: "連絡先",
@@ -52,7 +51,7 @@ const tokushohoRows = [
   },
   {
     label: "代金の支払方法",
-    value: "クレジットカード決済（Stripe）、PayPay等",
+    value: "クレジットカード決済（Stripe）",
   },
   {
     label: "引渡時期",
@@ -243,7 +242,6 @@ function TokushohoTable() {
                   )}
                   {"note" in row && row.note ? (
                     <p className="mt-2 text-xs leading-relaxed text-navy-muted/80 sm:text-sm">
-                      ※ {row.note}
                     </p>
                   ) : null}
                 </td>
