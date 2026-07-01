@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 128" width="320" height="128" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="sol" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D08A" />
+      <stop offset="100%" stop-color="#E6A055" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="luna" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8D4E8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <radialGradient id="ambient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0C896" stop-opacity="0.22" />
+      <stop offset="45%" stop-color="#E6A055" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#C8D4E8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowSol" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowLuna" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowLantern" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ÌonÔ‰KDIblur-2xl øS	 -->
+  <ellipse cx="160" cy="64" rx="140" ry="52" fill="url(#ambient)" />
+
+  <!-- *}Sol	æ -->
+  <circle cx="90" cy="64" r="40" fill="url(#sol)" filter="url(#glowSol)" opacity="0.95" />
+
+  <!-- Luna	ó -->
+  <circle cx="230" cy="64" r="36" fill="url(#luna)" filter="url(#glowLuna)" opacity="0.95" />
+
+  <!-- okrh‚W	-. -->
+  <circle cx="160" cy="64" r="6" fill="#E6A055" filter="url(#glowLantern)" />
+</svg>
