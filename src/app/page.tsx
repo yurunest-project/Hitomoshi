@@ -1,6 +1,6 @@
 /* ── データ ── */
 
-const CONTACT_EMAIL = "yurunest@gmail.com";
+const CONTACT_EMAIL = "hitomoshi.official@gmail.com";
 
 const services = [
   {
