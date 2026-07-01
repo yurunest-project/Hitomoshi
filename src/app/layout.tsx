@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   description:
     "個人事業「ひともし」の公式サイト。癒やし系Webサービス・アプリのハブ。ゆるネストなど、心に寄り添うサービスをお届けします。",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     apple: "/favicon.png",
   },
 };
