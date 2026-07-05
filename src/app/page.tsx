@@ -1,3 +1,5 @@
+import { SiteFooter } from "@/components/SiteFooter";
+
 /* ── データ ── */
 
 const CONTACT_EMAIL = "hitomoshi.official@gmail.com";
@@ -260,7 +262,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* ① ヒーロー */}
-      <header className="relative overflow-hidden px-5 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-20">
+      <header className="relative overflow-hidden px-5 pb-16 pt-8 sm:px-6 sm:pb-20 sm:pt-10">
         <div
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(230,160,85,0.08)_0%,_transparent_55%)]"
           aria-hidden="true"
@@ -281,7 +283,11 @@ export default function HomePage() {
 
       <main className="mx-auto max-w-3xl px-5 pb-20 sm:px-6">
         {/* ② サービス一覧 */}
-        <section aria-labelledby="services-heading" className="mb-20 sm:mb-24">
+        <section
+          id="services"
+          aria-labelledby="services-heading"
+          className="mb-20 scroll-mt-20 sm:mb-24"
+        >
           <div className="mb-8 text-center sm:mb-10">
             <p className="mb-2 text-sm font-medium tracking-widest text-lantern">
               SERVICES
@@ -307,7 +313,7 @@ export default function HomePage() {
         <section
           id="privacy"
           aria-labelledby="privacy-heading"
-          className="mb-20 scroll-mt-8 sm:mb-24"
+          className="mb-20 scroll-mt-20 sm:mb-24"
         >
           <div className="mb-8">
             <p className="mb-2 text-sm font-medium tracking-widest text-lantern">
@@ -330,7 +336,7 @@ export default function HomePage() {
         <section
           id="tokushoho"
           aria-labelledby="tokushoho-heading"
-          className="mb-16 scroll-mt-8"
+          className="mb-16 scroll-mt-20"
         >
           <div className="mb-8">
             <p className="mb-2 text-sm font-medium tracking-widest text-lantern">
@@ -347,36 +353,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* ⑤ フッター */}
-      <footer className="border-t border-navy/8 bg-white/50 px-5 py-10 sm:px-6">
-        <div className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-navy-muted">
-          <p>運営：ひともし（代表：佐野）</p>
-          <nav
-            className="mt-4 text-base text-navy"
-            aria-label="法務情報へのリンク"
-          >
-            <span aria-hidden="true"> </span>
-            <a
-              href="#privacy"
-              className="font-medium text-lantern underline-offset-4 hover:underline"
-            >
-              プライバシーポリシー
-            </a>
-            <span className="mx-2 text-navy-muted" aria-hidden="true">
-              ｜
-            </span>
-            <a
-              href="#tokushoho"
-              className="font-medium text-lantern underline-offset-4 hover:underline"
-            >
-              特定商取引法に基づく表記
-            </a>
-          </nav>
-          <p className="mt-4">
-            © 2026 hitomoshi. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

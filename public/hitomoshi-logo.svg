@@ -36,15 +36,15 @@
     </filter>
   </defs>
 
-  <!-- ÌonÔ‰KDIblur-2xl øS	 -->
+  <!-- ï¿½onÔ‰KDIblur-2xl ï¿½S	 -->
   <ellipse cx="160" cy="64" rx="140" ry="52" fill="url(#ambient)" />
 
-  <!-- *}Sol	æ -->
+  <!-- *}Sol	ï¿½ -->
   <circle cx="90" cy="64" r="40" fill="url(#sol)" filter="url(#glowSol)" opacity="0.95" />
 
-  <!-- Luna	ó -->
+  <!-- Luna	ï¿½ -->
   <circle cx="230" cy="64" r="36" fill="url(#luna)" filter="url(#glowLuna)" opacity="0.95" />
 
-  <!-- okrh‚W	-. -->
+  <!-- okrhï¿½W	-. -->
   <circle cx="160" cy="64" r="6" fill="#E6A055" filter="url(#glowLantern)" />
 </svg>
