@@ -11,7 +11,7 @@ const services = [
     nameEn: "yurunest",
     description:
       "夜眠れない人と、お家から一歩を踏み出したい人を繋ぐ安眠基地。ブラウザで完結する1対1の通話サービス。",
-    href: "https://yurunest.vercel.app",
+    href: "https://www.yurunest.com/",
     buttonLabel: "yurunest（ゆるネスト）を訪ねる",
   },
 ] as const;
